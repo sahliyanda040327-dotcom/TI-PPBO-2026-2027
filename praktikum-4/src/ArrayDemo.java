@@ -1,0 +1,16 @@
+public class ArrayDemo {
+    public static void main(String[] args) {
+        //cara 1: deklarasi langsung dengan nilai awal
+        int[] nilai = {80, 75, 90, 60, 88   };
+
+        //cara 2: deklarasi ukuran dulu isi belakangan
+        String[] namaHari = new  String[3];
+        namaHari[0] = "Senin";
+        namaHari[1] = "Selasa";
+        namaHari[2] = "Rabu";
+
+        System.out.println("Elemen pertama nilai: " + nilai[0]);
+        System.out.println("Jumlah elemen nilai: " + nilai.length);
+        System.out.println("Hari kedua: " + namaHari[1]);
+    }
+}
