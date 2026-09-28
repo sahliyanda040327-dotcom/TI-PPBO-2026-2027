@@ -12,5 +12,15 @@ public class ArrayDemo {
         System.out.println("Elemen pertama nilai: " + nilai[0]);
         System.out.println("Jumlah elemen nilai: " + nilai.length);
         System.out.println("Hari kedua: " + namaHari[1]);
+
+        System.out.println("--- Menggunakan for biasa ---");
+        for (int i = 0; i < nilai.length; i++) {
+            System.out.println("Indeks " + i + ": " + nilai[i]);
+            }
+
+        System.out.println("--- Menggunakan enhanced for ---");
+        for (int n : nilai) {
+            System.out.println(n);
+        }
     }
 }
