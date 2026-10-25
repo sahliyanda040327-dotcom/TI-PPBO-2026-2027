@@ -4,13 +4,13 @@ public class Produk {
     String namaProduk;
     double harga;
 
-    // constuctor parameter
+    // constructor berparameter
     public Produk(String namaProduk, double harga) {
         this.namaProduk = namaProduk;
         this.harga      = harga;
     }
 
-    // instance method
+    // instance metod
     // mengecek apakah harga melebihi batas harga
     public boolean isMahal(double batasHarga) {
         return harga > batasHarga;
