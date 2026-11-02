@@ -1,5 +1,4 @@
 public class Mahasiswa {
-    // Atribut (fields)
     private String nama;
     private String nim;
     private double ipk;
@@ -11,16 +10,17 @@ public class Mahasiswa {
         this.ipk  = ipk;
     }
 
-    // Getter untuk setiap atribut
-    public String getNama() {
-        return nama;
-    }
+    // Getter
+    public String getNama() { return nama; }
+    public String getNim()  { return nim;  }
+    public double getIpk()  { return ipk;  }
 
-    public String getNim() {
-        return nim;
-    }
-
-    public double getIpk() {
-        return ipk;
+    // Setter dengan validasi (nim read-only, tidak ada setNim)
+    public void setIpk(double ipk) {
+        if (ipk >= 0.0 && ipk <= 4.0) {
+            this.ipk = ipk;
+        } else {
+            System.out.println("IPK tidak valid, harus 0.0 - 4.0");
+        }
     }
 }
