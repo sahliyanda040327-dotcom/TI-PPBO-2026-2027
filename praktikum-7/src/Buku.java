@@ -10,7 +10,16 @@ public class Buku {
     }
 
     // Getter
-    public String getJudul()      { return judul; }
-    public String getPengarang()  { return pengarang; }
-    public int getTahunTerbit()   { return tahunTerbit; }
+    public String getJudul()     { return judul; }
+    public String getPengarang() { return pengarang; }
+    public int getTahunTerbit()  { return tahunTerbit; }
+
+    // Setter (tahunTerbit read-only, tidak ada setTahunTerbit)
+    public void setJudul(String judul) {
+        this.judul = judul;
+    }
+
+    public void setPengarang(String pengarang) {
+        this.pengarang = pengarang;
+    }
 }
