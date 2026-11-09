@@ -1,11 +1,12 @@
 public class Manager extends Pegawai {
-    private double tunjanganJabatan;
+    protected double tunjanganJabatan;
 
-    public  Manager(String nama, String nip, double gajiPokok, double tunjanganJabatan) {
-        super(nama, nip, gajiPokok); // panggil Construktor Pegawai
+    public Manager(String nama, String id, double gajiPokok, double tunjanganJabatan) {
+        super(nama, id, gajiPokok);
         this.tunjanganJabatan = tunjanganJabatan;
     }
-    public void tampilkanRingkasan() {
-        System.out.println("Manager: " + nama);
+
+    public double getTunjanganJabatan() {
+        return tunjanganJabatan;
     }
 }
