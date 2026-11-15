@@ -1,4 +1,4 @@
-public class KonversiSuhu {
+public class KonversiSuhuMethod {
     // Celsius -> Fahrenheit
     static double konversiSuhu(double celsius) {
         return celsius * 9 / 5 + 32;
