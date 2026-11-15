@@ -4,6 +4,7 @@ public class PenggajianDemo {
                 new Manager("Budi", "M001", 3000000, 1000000),
                 new Staff("Siti", "S001", 2000000, 500000),
                 new Staff("Andi", "S002", 2000000, 300000),
+                new Direktur("Dian", "D001", 5000000, 2000000, 1500000), // Latihan 4
         };
 
         double totalGaji = 0;
